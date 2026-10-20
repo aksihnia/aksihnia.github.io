@@ -425,19 +425,39 @@ textarea::placeholder {
         height: 500px;
     }
 }
-/* Center the main content */
+
+/* Align section content neatly */
 #about,
 #education,
 #research,
 #projects,
 #curriculum-vitae,
 #contact {
-    text-align: center;
+    text-align: left;
 }
 
 /* Center section headings */
 section h2 {
     text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/* Keep paragraphs readable */
+section p {
+    text-align: left;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Align lists neatly */
+#education ul,
+#research ul,
+#projects ul {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 /* Center the profile picture */
@@ -448,26 +468,20 @@ section h2 {
     object-fit: cover;
 }
 
-/* Center lists while keeping their text readable */
-#education ul,
-#research ul,
-#projects ul {
-    display: inline-block;
-    text-align: left;
-    max-width: 100%;
-}
-
-/* Center the CV viewer and links */
+/* Center the CV viewer */
 .cv-viewer {
     width: 100%;
+    max-width: 850px;
     margin: 1.5em auto;
 }
 
+/* Center the CV download link */
 .cv-download {
     text-align: center;
 }
 
-/* Center the contact links */
+/* Center contact information */
 #contact p {
     text-align: center;
 }
+
