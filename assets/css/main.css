@@ -484,4 +484,48 @@ section p {
 #contact p {
     text-align: center;
 }
+/* GitHub logo in the navigation */
+#navigation .github-link {
+    margin-left: auto;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#navigation .github-link i {
+    line-height: 1;
+}
+
+#navigation .github-link:hover {
+    opacity: 0.7;
+}
+
+/* Keep the navigation links on the left and GitHub on the right */
+#navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navigation .github-link {
+    margin-left: auto;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Position GitHub independently at the top-right */
+#navigation .github-link {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 1000;
+    margin: 0;
+    padding: 8px;
+    font-size: 1.6rem;
+    line-height: 1;
+}
